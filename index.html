@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        
-        <title>Bootstrap Examples</title>
-    </head>
-    <body>
-        <div class="container"> 
-            <h1>This will contain Bootstrap examples</h1>
-            <div class="row">
-                <div class="col-md-12 bg-primary">
-                    Hello irving!💩💩💩💩💩 <span class="glyphicon glyphicon-thumbs-up"></span>
-                </div>                
-            </div>
-            <div class="row">
-                <div class="col-md-6 bg-success">
-                    Hello 
-                </div>                
-                <div class="col-md-6 bg-warning">
-                    Irving!
-                </div>                
-            </div>
-            <div class="row">
-                <div class="col-xs-4 col-xs-offset-4 bg-info">
-                    Hello! I'm an offset!
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <title>Bootstrap Examples</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a id="company" href="/">My Company</a>
+                </div>  
+                <div class="navbar-right">
+                    <form class="nav navbar-nav navbar-form" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </body>
+        </nav>
+    </header>
+</body>
+
 </html>
